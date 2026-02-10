@@ -1,4 +1,4 @@
-# SGQ Manager
+# SGQ
 
 Sistema simplificado para Gestão de Qualidade, focado em conformidade, controle documental e melhoria de processos, sem módulos de estoque ou vendas.
 
