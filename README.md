@@ -30,7 +30,3 @@ O sistema é organizado em torno de 4 módulos principais:
 2. **Ambiente:** Configurar banco de dados no `.env`
 3. **Banco:** `php artisan migrate`
 4. **Rodar:** `php artisan serve`
-
----
-
-**Precisa que eu crie os Enums (`DocumentTypeEnum`, `QualityStatusEnum`, etc.) que foram usados nas migrations para o projeto ficar funcional?**
