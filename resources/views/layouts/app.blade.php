@@ -10,21 +10,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-light">
+<body class="bg-light overflow-hidden">
 
     @include('layouts.partials.navbar')
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="d-flex">
-                @include('layouts.partials.sidebar')
+    <div class="app-layout d-flex">
+        @include('layouts.partials.sidebar')
 
-                <main class="flex-fill p-4">
-                    @yield('content')
-                </main>
-            </div>
-        </div>
+        <main id="content" class="flex-fill p-4">
+            @yield('content')
+        </main>
     </div>
+
 </body>
+
 
 </html>

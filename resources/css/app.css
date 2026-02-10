@@ -1,2 +1,33 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.app-layout {
+    padding-top: 56px;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100vh - 56px);
+    transition: width 0.25s ease;
+    overflow: hidden;
+    z-index: 1030;
+}
+
+.sidebar-collapsed .sidebar {
+    width: 0;
+}
+
+#content {
+    margin-left: 250px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    transition: margin-left 0.25s ease;
+}
+
+.sidebar-collapsed #content {
+    margin-left: 0;
+}
